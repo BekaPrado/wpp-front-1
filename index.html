@@ -3,36 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Whatsapp</title>
+    <title>WhatsApp Web</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="wppApi.js"></script>
     <link rel="icon" href="icon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <h3>ㅤㅤㅤWhatsapp API</h3>
-
-    <div class="caixa">
-        
-        <div class="menor">
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-avatar">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                </div>
+               
+            </div>
             
-            <div class="primeira"></div>
-            <input type="text" id="versiculo" placeholder="pesquise um contato">
-            <button>Pesquisar</button>
+            <div class="search-bar">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
+                </div>
+            </div>
+            
             <div class="chat-list">
                 <div class="chat-item active">
-                    <div class="chat-avatar"></div>
-                    <div class="chat-info">
-                        <div class="chat-name">Contato 1</div>
-                        <div class="chat-preview">Última mensagem...</div>
+                    <div class="chat-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Contact">
                     </div>
-                    <div class="chat-time">12:30</div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Contato 1</span>
+                            <span class="chat-time">12:30</span>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Última mensagem...</span>
+                            <span class="unread-count">3</span>
+                        </div>
+                    </div>
                 </div>
+                
+                <div class="chat-item">
+                    <div class="chat-avatar">
+                        <img src="https://via.placeholder.com/50" alt="Contact">
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-name-time">
+                            <span class="chat-name">Contato 2</span>
+                            <span class="chat-time">Ontem</span>
+                        </div>
+                        <div class="chat-preview">
+                            <span>Olá, como você está?</span>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- Mais itens de chat aqui -->
             </div>
         </div>
-        <div class="segunda"></div>
+        
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="contact-info">
+                    <div class="contact-avatar">
+                        <img src="https://via.placeholder.com/40" alt="Contact">
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-name">Contato 1</span>
+                        <span class="contact-status">online</span>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div class="chat-messages">
+                <div class="message received">
+                    <div class="message-content">
+                        Olá, como você está?
+                    </div>
+                    <div class="message-time">12:30</div>
+                </div>
+                
+                <div class="message sent">
+                    <div class="message-content">
+                        Estou bem, obrigado! E você?
+                    </div>
+                    <div class="message-time">12:32</div>
+                </div>
+            </div>
+            
+            <div class="message-input">
+                
+                <input type="text" placeholder="Digite uma mensagem">
+                <div class="input-voice">
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </div>
+        </div>
     </div>
-    
 </body>
 </html>
